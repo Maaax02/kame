@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kame</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body
+    class="bg-cover bg-center bg-no-repeat h-screen"
+    style="background-image: url('images/video.gif')"
+  >
+    <!-- Navbar with hamburger menu -->
+    <div class="flex justify-between items-center p-4 w-full z-20">
+      <button id="menu-btn" class="p-2 focus:outline-none w-20">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <img src="images/navbar.png" alt="navbar" class="w-1/2" />
+      <div></div>
+    </div>
+
+    <!-- Sidebar (initially hidden) -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-[400px] h-full bg-gray-700 z-30 transform -translate-x-full transition-transform duration-300 ease-in-out"
+    >
+      <div class="p-4 flex justify-between items-center">
+        <button id="close-btn" class="text-white focus:outline-none w-20">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="p-4 text-white">
+        <ul class="text-center">
+          <li class="my-8 text-4xl"><a href="#">PRENOTAZIONI</a></li>
+          <li class="my-8 text-4xl"><a href="#">MERCHANDISING</a></li>
+          <li class="my-8 text-4xl"><a href="#">GALLERY</a></li>
+          <li class="my-8 text-4xl"><a href="#">CHI SIAMO</a></li>
+          <li class="my-8 text-4xl"><a href="#">CONTATTI</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-full relative mt-20 px-10">
+      <div class="swiper multiple-slide-carousel swiper-container relative">
+        <div class="swiper-wrapper mb-16 items-center">
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 1</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 2</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 3</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 4</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 5</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 6</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 7</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 8</span
+              >
+            </div>
+          </div>
+          <div class="swiper-slide h-[400px] duration-200 transition-all">
+            <div
+              class="rounded-2xl h-full flex justify-center items-center bg-white"
+            >
+              <span class="text-2xl font-semibold text-indigo-600"
+                >Slide 9</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text-black text-[40px] text-center mb-10 mt-20">
+      VIDEO TRAILER
+    </h4>
+    <div class="h-[550px] w-[1220px] rounded-2xl bg-white mx-auto mb-28"></div>
+    <!-- JavaScript to toggle the sidebar and handle carousel -->
+    <script>
+      // Initial setup to make the first slide larger
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".swiper-slide");
+        slides[swiper.activeIndex].classList.add("h-[570px]");
+      });
+
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const sidebar = document.getElementById("sidebar");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+        sidebar.classList.add("translate-x-0");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("-translate-x-full");
+      });
+
+      var swiper = new Swiper(".multiple-slide-carousel", {
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        breakpoints: {
+          1920: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1028: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          990: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+      });
+      swiper.on("slideChange", function () {
+        const slides = document.querySelectorAll(".swiper-slide");
+
+        // Reset all slides to default height and width
+        slides.forEach((slide) => {
+          slide.classList.remove("h-[570px]", "h-[300px]", "h-[200px]"); // Remove height classes
+          slide.classList.remove("w-[300px]", "w-[215px]", "w-[145px]"); // Remove width classes
+          slide.classList.add("h-[400px]", "w-[215px]"); // Default height and width for non-active, non-edge slides
+        });
+
+        // Make the active (centered) slide larger
+        const activeSlide = slides[swiper.activeIndex]; // Use activeIndex for looped slides
+        activeSlide.classList.remove("h-[400px]", "w-[215px]");
+        activeSlide.classList.add("h-[570px]", "w-[300px]"); // Larger height and width for the active (centered) slide
+
+        // Get slides at the far left and far right (next to the center)
+        const leftEdgeIndex =
+          (swiper.activeIndex - 1 + slides.length) % slides.length;
+        const rightEdgeIndex = (swiper.activeIndex + 1) % slides.length;
+
+        const leftEdgeSlide = slides[leftEdgeIndex];
+        const rightEdgeSlide = slides[rightEdgeIndex];
+
+        // Set medium height and width for edge slides (next to the active slide)
+        leftEdgeSlide.classList.remove("h-[400px]", "w-[215px]");
+        leftEdgeSlide.classList.add("h-[300px]", "w-[215px]"); // Smaller height and medium width for left slide
+
+        rightEdgeSlide.classList.remove("h-[400px]", "w-[215px]");
+        rightEdgeSlide.classList.add("h-[300px]", "w-[215px]"); // Smaller height and medium width for right slide
+
+        // Get far left and far right slides (further away from the center)
+        const farLeftIndex =
+          (swiper.activeIndex - 2 + slides.length) % slides.length;
+        const farRightIndex = (swiper.activeIndex + 2) % slides.length;
+
+        const farLeftSlide = slides[farLeftIndex];
+        const farRightSlide = slides[farRightIndex];
+
+        // Set even smaller height and width for far left and far right slides
+        farLeftSlide.classList.remove("h-[400px]", "w-[215px]");
+        farLeftSlide.classList.add("h-[200px]", "w-[145px]"); // Smaller height and width for far left slide
+
+        farRightSlide.classList.remove("h-[400px]", "w-[215px]");
+        farRightSlide.classList.add("h-[200px]", "w-[145px]"); // Smaller height and width for far right slide
+      });
+    </script>
+  </body>
+</html>
